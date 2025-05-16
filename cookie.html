@@ -1,47 +1,63 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coockie</title>
-   <link rel="stylesheet" href="/accueil.css">
-   <link rel="stylesheet" href="/assets/coockie.css">
-   <link rel="stylesheet" href="/assets/style.css">
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/coockie.css">
+ </head>
+ <body>
+  
+   <!-- Contenu principal de la page -->
+    <h1>Bienvenue sur Cook&I</h1>
     
-</head>
-<body>
+    <!-- Message de bienvenue qui sera mis à jour avec le nom de l'utilisateur -->
+    <div class="welcome-message hidden" id="welcomeMessage">
+      <h2 id="personalWelcome">Bienvenue !</h2>
+    </div>
+    
+    <p>Votre solution unique pour tous vos besoins culinaires !</p>
+    <p>Découvrez nos recettes, astuces et bien plus encore.</p>
+    
+    <!-- Modale de consentement des cookies -->
+    <div class="modal-container" id="cookieConsentModal">
+      <div class="modal">
+        <h2>Gestion des cookies</h2>
+        <p>Ce site utilise des cookies pour améliorer votre expérience. Acceptez-vous l'utilisation de cookies ?</p>
+        <div class="modal-buttons">
+          <button class="secondary" id="rejectCookies">Refuser</button>
+          <button id="acceptCookies">Accepter</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modale d'avertissement après refus -->
+    <div class="modal-container hidden" id="warningModal">
+      <div class="modal">
+        <h2>Attention</h2>
+        <p>Le site pourrait rencontrer des dysfonctionnements sans l'utilisation de cookies.</p>
+        <div class="modal-buttons">
+          <button id="closeWarning">Compris</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modale pour saisir le nom d'utilisateur -->
+    <div class="modal-container hidden" id="usernameModal">
+      <div class="modal">
+        <h2>Personnalisation</h2>
+        <p>Veuillez entrer votre nom pour personnaliser votre expérience :</p>
+        <input type="text" id="usernameInput" placeholder="Votre nom">
+        <div class="modal-buttons">
+          <button class="secondary" id="cancelUsername">Annuler</button>
+          <button id="saveUsername">OK</button>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 Cook&I. Tous droits réservés.</p>
+    </footer>
 
-    <nav>
-        <ul>
-          <li>
-            <a href="index.html">Tableau Tips</a>
-          </li>
-          <li>
-            <a href="crud.html">Crud</a>
-          </li>
-          <li>
-            <a href="modal.html">modal</a>
-          </li>
-          <li>
-            <a href="cookie.html">Cookies</a>
-          </li>
-          <li>
-            <a href="api.html">API</a>
-          </li>
-          <li>
-            <a href="aide.html">Aide</a>
-          </li>
-        </ul>
-      </nav>
-
-<h1>Bienvennue sur  Coockie</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, blanditiis?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, blanditiis?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, blanditiis?</p>
-
-    
-    
-    
-<script src="/assets/cookie.js"></script>
-</body>
-</html>
+<script src="/assets/cookies.js"></script> </body>
+ </html>

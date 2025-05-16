@@ -1,0 +1,17 @@
+Points d'apprentissage
+Ce TP permet de comprendre :
+
+1. La syntaxe de base pour manipuler les cookies
+2 .Comment récupérer et afficher les cookies existants
+3 .Comment le processus de mise à jour fonctionne (réécriture du cookie)
+4 .Les principes de base de la suppression (avec explication sur la date d'expiration)
+
+Pour consulter les cookies dans le navigateur :
+
+Appuyer sur F12 (ou clic droit → Inspecter)
+Aller dans l'onglet "Application" (Chrome) ou "Stockage" (Firefox)
+Développer la section "Cookies" et sélectionner le site
+
+Nous reprendrons les modales et les cookies des que possible, preparez vos questions au prealable et envoyez les moi en MP, j'y reviendrais en cours. 
+
+Ce TP, refaites le et impregnez vous en. A mon retour, on verra vos questions et un cas pratique sur la base de ce que l'on a fait hier.
